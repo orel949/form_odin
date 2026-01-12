@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="partGauche">
+        <img src="design.png" alt="illustration carambar">
+    </div>
+    <div class="partDroite">
+        <section class="header">
+            <h1>
+                Get started
+            </h1>
+        </section>
+        <form action="">
+            <section class="principal">
+                <div class="userName">
+                    <div class="champ">
+                        <label for="firstName">*FIRST NAME</label>
+                        <input type="text" name="userFirstName" id="firstName" required>
+                    </div>
+                    <div class="champ">
+                        <label for="lastName">*LAST NAME</label>
+                        <input type="text" name="userLastName" id="lastName" required>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="champ">
+                        <label for="email">*E-MAIL</label>
+                        <input type="email" name="userEmail" id="email" required>
+                    </div>
+                    <div class="champ">
+                        <label for="number">*PHONE</label>
+                        <input type="tel" name="userNumber" id="number" minlength="10" maxlength="10" pattern="^(?:\+33|0)[1-9](?:[\s.-]?\d{2}){4}$" required>
+                    </div>
+                </div>
+                <div class="mdp">
+                    <div class="champ">
+                        <label for="motDePasse">*PASSWORD</label>
+                        <input type="password" name="userPassword" id="motDePasse" required minlength="8" maxlength="24">
+                    </div>
+                    <div class="champ">
+                        <label for="confirm">*CONFIRM PASSWORD</label>
+                        <input type="password" name="userConfirmed" id="confirm" required minlength="8" maxlength="24">
+                    </div>
+                </div>
+            </section>
+            <section class="bouton">
+                <button type="submit">Create Account</button>
+                <p>Already have an account ? <strong><span class="logIn">LOG IN</span></strong></p>
+            </section>
+        </form>
+        <section class="footer">
+             <div>
+                <progress class="barre" value="0" max="6"></progress>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

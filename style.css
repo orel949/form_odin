@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1
+{
+    font-size: 37px;
+}
+body
+{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.partDroite
+{
+    background-color: #222222;
+    width: 100vw;
+    color: white;
+    padding-left: 8vw;
+}
+.logIn
+{
+    color: #F9C105;
+    display: inline-block; 
+    cursor: pointer;
+    transition: transform 0.1s ease
+}
+.logIn:hover{
+    color: white;
+}
+.logIn:active
+{
+    transform: scale(0.95);
+}
+.header{
+    color: #F9C105;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.userName
+{
+    display: flex;
+    gap: 8vw;
+}
+.information{
+    display: flex;
+    gap: 8vw;
+}
+.mdp{
+    display: flex;
+    gap: 8vw;
+}
+.principal
+{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: space-between;
+}
+.champ{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+.bouton
+{
+    color: #9CA3AF;
+}
+button{
+  background-color: #F9C105; 
+  width: 13vw;        
+  color: white;                     
+  border: none;                      
+  border-radius: 8px;                
+  padding: 0.75em 1.5em;             
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+button:hover {
+  background-color: #FFD23D;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+button:active{
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+input
+{
+    background-color: #222222;
+    border: 1px solid #9CA3AF;
+    border-radius: 5px;
+    width: 15vw;
+    height: 3vh;
+    color: #9CA3AF;
+}
+label
+{
+    font-size: 12px;
+    color: #9CA3AF;
+}
+input:focus
+{
+    outline: none;
+    transition: none;
+    box-shadow: none;
+    border: 1px solid #F9C105;
+}
+input:user-valid
+{
+    outline: none;
+    transition: none;
+    box-shadow: none;
+    border: 1px solid green;
+}
+input:user-invalid
+{
+    outline: none;
+    transition: none;
+    box-shadow: none;
+    border: 1px solid red;
+}
+.footer
+{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+}
+progress {
+  width: 15vw;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: green;
+  border-radius: 5px;
+}
